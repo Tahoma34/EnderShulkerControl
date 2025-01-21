@@ -1,0 +1,51 @@
+# Списки запрещённых предметов:
+blocked-items:
+  enderchest:
+    - DIAMOND_SWORD
+    - DIAMOND_PICKAXE
+  shulkerbox:
+    - TNT
+    - BEDROCK
+
+# Миры, в которых запрет не действует:
+blacklisted-worlds:
+  - example_world
+
+# Включить ли логирование в консоли:
+logging:
+  console-enabled: true
+
+# Сообщения и звуки:
+messages:
+  on-block: '&c❖ Нельзя класть этот предмет сюда!'
+sounds:
+  block: 'ENTITY_VILLAGER_NO'
+
+# Все сообщения для команд:
+commands-messages:
+  no-permission: '&c❖ &fУ вас нет прав!'
+  usage-additem: '&e❖ &fИспользование: &7/esc additem <ender|shulker> <MATERIAL>'
+  usage-removeitem: '&e❖ &fИспользование: &7/esc removeitem <ender|shulker> <MATERIAL>'
+  usage-addworld: '&e❖ &fИспользование: &7/esc addworld <worldName>'
+  usage-removeworld: '&e❖ &fИспользование: &7/esc removeworld <worldName>'
+  plugin-reloaded: '&a❖ &fПлагин перезагружен!'
+  material-invalid: '&c❖ &fНеправильный материал: &7%material%'
+  item-added-ender: '&a❖ &fМатериал добавлен в список для эндер-сундука: &7%material%'
+  item-exists-ender: '&e❖ &fМатериал уже в списке: &7%material%'
+  item-added-shulker: '&a❖ &fМатериал добавлен в список для шалкер-бокса: &7%material%'
+  item-exists-shulker: '&e❖ &fМатериал уже в списке: &7%material%'
+  item-removed-ender: '&a❖ &fМатериал удалён из списка для эндер-сундука: &7%material%'
+  item-notfound-ender: '&e❖ &fМатериал отсутствует в списке: &7%material%'
+  item-removed-shulker: '&a❖ &fМатериал удалён из списка для шалкер-бокса: &7%material%'
+  item-notfound-shulker: '&e❖ &fМатериал отсутствует в списке: &7%material%'
+  addworld-added: '&a❖ &fМир добавлен в чёрный список: &7%world%'
+  addworld-exists: '&e❖ &fМир уже в чёрном списке: &7%world%'
+  removeworld-removed: '&a❖ &fМир удалён из чёрного списка: &7%world%'
+  removeworld-notfound: '&e❖ &fМир отсутствует в чёрном списке: &7%world%'
+
+  help-header: '&6--- EnderShulkerControl Команды ---'
+  help-additem: '&e/esc additem <ender|shulker> <MATERIAL> &7- Добавить предмет в список'
+  help-removeitem: '&e/esc removeitem <ender|shulker> <MATERIAL> &7- Удалить предмет из списка'
+  help-addworld: '&e/esc addworld <worldName> &7- Добавить мир в чёрный список'
+  help-removeworld: '&e/esc removeworld <worldName> &7- Удалить мир из чёрного списка'
+  help-reload: '&e/esc reload &7- Перезагрузить плагин'

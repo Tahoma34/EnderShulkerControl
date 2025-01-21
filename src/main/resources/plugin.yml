@@ -1,0 +1,16 @@
+name: EnderShulkerControl
+version: '1.1'
+main: org.tahoma.endershulker.EnderShulkerControl
+api-version: '1.16'
+commands:
+  esc:
+    description: Команды управления EnderShulkerControl
+    usage: /esc [args]
+
+permissions:
+  endershulkercontrol.admin:
+    description: Позволяет использовать все команды плагина.
+    default: op
+  endershulkercontrol.bypass:
+    description: Позволяет обходить запреты на предметы.
+    default: false
