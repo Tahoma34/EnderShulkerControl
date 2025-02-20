@@ -175,9 +175,6 @@ public class EnderCommands implements CommandExecutor {
         sender.sendMessage(getMsg("commands-messages.help-reload"));
     }
 
-    /**
-     * Служебный метод для получения текста сообщения из config.yml
-     */
     private String getMsg(String path) {
         String msg = EnderShulkerControl.getInstance().getConfig().getString(path,
                 "§c[Не найдено в config.yml: " + path + "]");
